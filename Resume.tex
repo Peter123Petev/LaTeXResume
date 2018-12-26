@@ -1,0 +1,106 @@
+% Peter Petev's Custom Beautiful LaTeX Resume Format
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[english]{babel}
+\usepackage{multicol}
+
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{scrextend}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\hypersetup{ colorlinks=false }
+
+\begin{document}
+	\begin{titlepage}
+		\small
+			\begin{center}
+				\centerline{{\Large \textbf{Peter Petev}}}
+				\centerline{Washington University in St. Louis - Computer Science Major, Financial Engineering Second Major}
+				\small
+				\begin{minipage}[b]{\textwidth}
+					\textcolor{gray}{\faEnvelope \space pspetev@gmail.com}\hfill
+					\textcolor{gray}{\faMobilePhone \space 314-629-0096}\hfill
+					\textcolor{gray}{\faPhoneSquare \space 636-686-7175}\hfill
+					\textcolor{gray}{\faLinkedinSquare \slash \href{http://www.linkedin.com/in/peterspetev}{peterspetev}}\hfill
+					\textcolor{gray}{\faGithubSquare \slash \href{http://www.github.com/Peter123Petev}{Peter123Petev}}
+				\end{minipage}
+			\end{center}
+		\vspace{-15pt}
+		\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\vspace{5pt}
+		\vspace{-10pt}{\textit{\textbf{\faInfoCircle \space About Me}}}\\\rule{\textwidth}{0.4pt}
+		\begin{addmargin}[1em]{0em}
+			\vspace{-10pt}
+			\begin{center}
+				\begin{minipage}[b]{0.4\textwidth}
+					\textbf{Programming Languages:}\\ 9 Years: Java\\ 3 Years: Python, HTML, CSS\\ 1 Year: PHP, MySQL, Javascript\\Months: MATLAB, \LaTeX\\
+				\end{minipage}%
+				\begin{minipage}[b]{0.3\textwidth}
+					\textbf{Workplace Skills:}\\ Excel, Word, Powerpoint\\ Outlook, Google Drive, Git\\ Factset, HOLT Lens\\Time Management, Planning\\
+				\end{minipage}%
+				\begin{minipage}[b]{0.3\textwidth}
+					\textbf{Interests:}\\ Financial Markets\\ Programming\\ Quant Trading\\ Software/Web Development\\
+				\end{minipage}
+			\end{center}
+		\end{addmargin}
+		\vspace{-10pt}
+		\noindent
+		\vspace{-10pt}{\textit{\textbf{\faSuitcase \space Work Experience}}}\\\rule{\textwidth}{0.4pt}
+		\begin{addmargin}[1em]{0em}
+			\textbf{Ziegler Capital (Stifel Nicolaus)\hfill Winter 2018}\\
+Quantitative Research Winter Intern \hfill {\small{12/21/18 - 1/11/19}}\newline
+- Utilized MySQL to query large databases of financial information \newline
+- Used Python with sklearn, statsmodels, and pandas to analyze financial data\newline
+			\textbf{Ziegler Capital (Stifel Nicolaus)\hfill Summer 2018}\\
+Quantitative Research Summer Intern \hfill {\small{5/10/18 - 8/17/18}}\newline
+- Developed statistical models and tested strategies for senior portfolio managers\newline
+- Developed custom algorithms and software in Python and Java\newline
+- Gave weekly presentations to an investment committee\newline
+		\end{addmargin}
+		\vspace{-10pt}
+		\noindent
+		\vspace{-10pt}{\textit{\textbf{\faTrophy \space Competitions}}}\\\rule{\textwidth}{0.4pt}
+		\begin{addmargin}[1em]{0em}
+			\textbf{ThinkOrSwim University Stock Trading Competition \hfill (October 2018)}\\
+- Led a three person WashU trading team to 15\textsuperscript{th} out of 516 college teams by achieving a 48.43\% return\\
+			\textbf{WashU Student Investment Fund Portfolio Manager \hfill (December 2017–18)}\\
+- Earned election (and re-election) for a portfolio manager position in WashU's \$150,000 student fund\\
+			\textbf{1\textsuperscript{st} Place Washington University Investment Pitch Competition \hfill (December 2017)}\\
+- Created valuation models, risk analysis, sector analysis, and extensive research into the news and management of a stock, followed up by questions from members of the club\\
+			\textbf{1\textsuperscript{st} Place Washington University Technology Entrepreneurs Hackathon \hfill (November 2017)}\\
+- Led a two-person team to create an application in Android Studio and pitch the idea to a panel of judges \\
+		\end{addmargin}
+		\vspace{-10pt}
+		\noindent
+		\vspace{-10pt}{\textit{\textbf{\faBook \space Personal Projects}}}\\\rule{\textwidth}{0.4pt}
+		\begin{addmargin}[1em]{0em}
+			\textbf{Co-Founder and President of WashU Trading Club \hfill (Winter 2018)}\\
+- Co-founded a financial asset trading club to follow and discuss trading opportunities with other members\\
+			\textbf{Time Series Prediction and Volatility Analyzer (Java) \hfill (Winter 2018)}\\
+- Derived an algorithm to forecast time series movements and volatility based on price history and volume \\
+			\textbf{PredictIt Quantitative Trading (Python) \hfill (Winter 2017)}\\
+- Helped strategize an algorithmic arbitrage trading system for political betting website PredictIt \\
+			\textbf{Sentiment Analyzer (Java) \hfill (Fall 2017)}\\
+- Used natural language processing to analyze social media stock sentiment from Twitter and StockTwits\\
+			\textbf{Short Squeeze Scanner (Java) \hfill (Summer 2017)}\\
+- Used A.I. to forecast daily stock movements from price history, pre-market gap, short float, and short interest\\
+		\end{addmargin}
+		\vspace{-10pt}
+		\noindent
+		\vspace{-10pt}{\textit{\textbf{\faGraduationCap \space Education}}}\\\rule{\textwidth}{0.4pt}
+		\begin{addmargin}[1em]{0em}
+			\textbf{Washington University in St. Louis St. Louis, MO \hfill (August 2017–May 2021 Expected)}\\
+- Majoring in Computer Science and Financial Engineering\\
+- Cummulative GPA: 3.6 / 4.0 (Dean's List)\\
+- Coursework in Economics, Accounting, Statistics, Calculus, Physics, Computer Science, Logic, Algorithms\\
+			\textbf{Parkway West High School St. Louis, MO \hfill (August 2013–May 2017)}\\
+- Cumulative GPA: 4.15 / 4.0, ACT: 34 / 36\\
+- Honors: National Merit Finalist, National Honor Society, Beta Chi Pi, Mu Alpha Theta, Summa Cum Laude \\
+		\end{addmargin}
+	\end{titlepage}
+\end{document}
